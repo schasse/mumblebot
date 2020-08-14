@@ -1,0 +1,11 @@
+--- old_connection.rb   2020-08-14 12:48:27.849503519 +0000
++++ connection.rb       2020-08-14 12:48:51.485087120 +0000
+@@ -12,7 +12,7 @@
+     end
+
+     def connect
+-      context = OpenSSL::SSL::SSLContext.new(:TLSv1)
++      context = OpenSSL::SSL::SSLContext.new(:TLSv1_2)
+       context.verify_mode = OpenSSL::SSL::VERIFY_NONE
+       [:key, :cert].each { |s| context.send("#{s}=", @cert_manager.send(s)) }
+       tcp_sock = TCPSocket.new @host, @port

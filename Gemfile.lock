@@ -36,7 +36,7 @@ DEPENDENCIES
   ruby-mpd
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.7.1p83
 
 BUNDLED WITH
-   1.12.5
+   2.1.4
