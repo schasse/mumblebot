@@ -47,6 +47,7 @@ class MumbleMPD
   def start_mpd
     system 'mpd'
     system "mpc add #{ENV['MB_STREAM']}"
+    system 'mpc volume 30'
     system 'mpc play'
   end
 
